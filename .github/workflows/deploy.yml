@@ -21,7 +21,3 @@ jobs:
       - name: Deploy to server
         run: |
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "bash /home/u953547654/deploy.sh"
-        env:
-          SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          DEPLOY_DIR: ${{ secrets.DEPLOY_DIR }}
