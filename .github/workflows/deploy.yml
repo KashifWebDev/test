@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "bash /home/u953547654/deploy.sh"
+          ssh  -p 65002 ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "bash /home/u953547654/deploy.sh"
